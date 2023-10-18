@@ -8,12 +8,16 @@
 <body>
     <script>
         function playRound(playerSelection, computerSelection) {
-  // your code here!
-}
+            let getComputerChoice = Math.random; 
+                if (getComputerChoice < 3.4){
+                    getComputerChoice = 'rock';
+                }
+                
+    }
  
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+        const playerSelection = "rock";
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
 
     </script>
 </body>
