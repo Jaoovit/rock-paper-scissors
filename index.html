@@ -9,12 +9,12 @@
     <script>
             
             function getUserChoice() {
-                let userChoice = window.prompt('rock, paper or scissors?')
+                return window.prompt('rock, paper or scissors?')
             }
            
                        
             function getComputerChoice() {
-                let computerChoice = Math.random; 
+                let computerChoice = Math.random (); 
                     if (computerChoice < 0.34){return 'rock';} 
                     else if (computerChoice <= 0.67){return 'paper';}
                     else {return 'scissors';}
@@ -53,8 +53,8 @@
                         console.log('Tie')
                     }
                 }
-            
                 
+                playRound();
     </script>
 </body>
 </html>
