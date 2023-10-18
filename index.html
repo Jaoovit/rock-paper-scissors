@@ -9,8 +9,12 @@
     <script>
         function playRound(playerSelection, computerSelection) {
             let getComputerChoice = Math.random; 
-                if (getComputerChoice < 3.4){
+                if (getComputerChoice < 0.34){
                     getComputerChoice = 'rock';
+                } else if (getComputerChoice <= 0.67){
+                    getComputerChoice = 'paper';
+                } else {
+                    getComputerChoice = 'scissors';
                 }
                 
     }
