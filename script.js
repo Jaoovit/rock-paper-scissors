@@ -28,26 +28,29 @@ function playRound() {
         else if(playerSelection === 'paper' && computerSelection === 'rock') {
             console.log('You win! Paper beats Rock')
         }
-        
         else if(playerSelection === 'scissors' && computerSelection === 'rock') {
             console.log('You lose! Rock beats Scissors')
         }
-        
         else if(playerSelection === 'paper' && computerSelection === 'scissors') {
             console.log('You lose! Scissors beats Paper')
         }
-        
         else if (playerSelection === 'rock' && computerSelection === 'paper') {
             console.log('You lose! Paper beats Rock')
         }
-        
         else if (playerSelection === computerSelection) {
-            console.log('Tie')
+            window.alert('Tie, play again')
+            playRound()
         }
-
         else {
             console.log('Unavalible valeu, try again')
         }
     }
     
-    playRound();
+    function score() {
+                
+        for(let i = 1; i <= 5; i++) {
+            playRound();
+        }
+    }
+
+    score();
