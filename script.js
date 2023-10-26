@@ -12,13 +12,13 @@ function getComputerChoice() {
 }
                 
 
-function playRound(userChoice , computerChoice) {
+function playRound() {
 
     
 
     const playerSelection = getUserChoice();
     const computerSelection = getComputerChoice();
-    
+
         if (playerSelection === 'rock' && computerSelection === 'scissors') {
             console.log('You win! Rock beats Scissors')
         }
@@ -41,8 +41,12 @@ function playRound(userChoice , computerChoice) {
             console.log('You lose! Paper beats Rock')
         }
         
-        else {
+        else if (playerSelection === computerSelection) {
             console.log('Tie')
+        }
+
+        else {
+            console.log('Unavalible valeu, try again')
         }
     }
     
