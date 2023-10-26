@@ -1,7 +1,23 @@
 function getUserChoice() {
-    return window.prompt('rock, paper or scissors?').toLowerCase()
-}
 
+    /*return window.prompt('rock, paper or scissors?').toLowerCase()*/
+
+
+    let btn1 = document.querySelector('#btn1');
+    btn1.addEventListener("click", (e) =>{ 
+        (e.target.innerHTML);
+    });
+
+    let btn2 = document.querySelector('#btn2');
+    btn2.addEventListener("click", (e) =>{ 
+        (e.target.innerHTML);
+    });
+    let btn3 = document.querySelector('#btn3');
+    btn3.addEventListener("click", (e) =>{ 
+        (e.target.innerHTML);
+    });
+ 
+    }
            
 function getComputerChoice() {
     let computerChoice = Math.random (); 
@@ -10,11 +26,8 @@ function getComputerChoice() {
         else {return 'scissors';}
     
 }
-                
 
 function playRound() {
-
-    
 
     const playerSelection = getUserChoice();
     const computerSelection = getComputerChoice();
@@ -37,20 +50,25 @@ function playRound() {
         else if (playerSelection === 'rock' && computerSelection === 'paper') {
             console.log('You lose! Paper beats Rock')
         }
-        else if (playerSelection === computerSelection) {
+        /*else (playerSelection === computerSelection); {
             window.alert('Tie, play again')
             playRound()
         }
         else {
-            console.log('Unavalible valeu, try again')
-        }
+            window.alert('Unavalible valeu, try again')
+            playRound()
+        }*/
     }
+
     
     function score() {
-                
+
+        
         for(let i = 1; i <= 5; i++) {
             playRound();
         }
+
+        
     }
 
     score();
