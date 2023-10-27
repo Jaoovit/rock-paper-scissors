@@ -1,23 +1,18 @@
+let bnt1 = document.querySelector('#btn1') 
+let bnt2 = document.querySelector('#btn2')
+let bnt3 = document.querySelector('#btn3')
+
+btn1.addEventListener('click', getUserChoice)
+bnt2.addEventListener('click', getUserChoice)
+bnt3.addEventListener('click', getUserChoice)
+
 function getUserChoice() {
 
     /*return window.prompt('rock, paper or scissors?').toLowerCase()*/
-
-
-    let btn1 = document.querySelector('#btn1');
-    btn1.addEventListener("click", (e) =>{ 
-        (e.target.innerHTML);
-    });
-
-    let btn2 = document.querySelector('#btn2');
-    btn2.addEventListener("click", (e) =>{ 
-        (e.target.innerHTML);
-    });
-    let btn3 = document.querySelector('#btn3');
-    btn3.addEventListener("click", (e) =>{ 
-        (e.target.innerHTML);
-    });
+    
+    
  
-    }
+}
            
 function getComputerChoice() {
     let computerChoice = Math.random (); 
@@ -50,7 +45,7 @@ function playRound() {
         else if (playerSelection === 'rock' && computerSelection === 'paper') {
             console.log('You lose! Paper beats Rock')
         }
-        /*else (playerSelection === computerSelection); {
+        /*else if (playerSelection === computerSelection) {
             window.alert('Tie, play again')
             playRound()
         }
