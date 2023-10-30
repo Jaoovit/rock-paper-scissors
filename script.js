@@ -12,16 +12,6 @@ function getUserChoice(e) {
     
 }
 
-
-
-/*function getUserChoice() {
-
-    return window.prompt('rock, paper or scissors?').toLowerCase()
- 
-}
-*/
-
-
 function getComputerChoice() {
     let computerChoice = Math.random (); 
         if (computerChoice < 0.34){return 'rock';} 
@@ -29,6 +19,7 @@ function getComputerChoice() {
         else {return 'scissors';}
     
 }
+
 let result = [];
 
 function playRound(userChoice) {
@@ -36,47 +27,43 @@ function playRound(userChoice) {
     const playerSelection = userChoice;
     const computerSelection = getComputerChoice();
 
-       console.log('string ' + playerSelection + ' computer ' + computerSelection) 
        if (playerSelection === 'rock' && computerSelection === 'scissors') {
-            result.put('You win! Rock beats Scissors')
+            result.put = 'You win! Rock beats Scissors'
         }
         else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-            result = 'You win! Scissors beats Paper'
+            result.put = 'You win! Scissors beats Paper'
         }
         else if(playerSelection === 'paper' && computerSelection === 'rock') {
-            result = 'You win! Paper beats Rock'
+            result.put = 'You win! Paper beats Rock'
         }
         else if(playerSelection === 'scissors' && computerSelection === 'rock') {
-            result = 'You lose! Rock beats Scissors'
+            result.put = 'You lose! Rock beats Scissors'
         }
         else if(playerSelection === 'paper' && computerSelection === 'scissors') {
-            result = 'You lose! Scissors beats Paper'
+            result.put = 'You lose! Scissors beats Paper'
         }
         else if (playerSelection === 'rock' && computerSelection === 'paper') {
-            result = 'You lose! Paper beats Rock'
+            result.put = 'You lose! Paper beats Rock'
         }
-        console.log(result)
-        /*else if (playerSelection === computerSelection) {
-            window.alert('Tie, play again')
-            playRound()
+        else if (playerSelection === computerSelection) {
+            result.put = 'Tie, Play Again'
         }
-        else {
-            window.alert('Unavalible valeu, try again')
-            playRound()
-        }*/
+        
+        document.querySelector('#scoreboard').innerHTML = result.put;
     }
     
 
     
-   function score() {
+
+    
+   /*function score() {
 
         
         for(let i = 1; i <= 5; i++) {
-            playRound();
         }
 
         
     }
-
+*/
 
     
