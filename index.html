@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <button id="btn1">rock</button>
-    <button id="btn2">paper</button>
-    <button id="btn3">scissors</button>
-    <div>
-        <p id="scoreboard"></p>
-    </div>
-
-    <!--
-
-    <input type="button" id="btn1" value="rock">
-    <input type="button" id="btn2" value="paper">
-    <input type="button" id="btn3" value="scissors">
-
-    -->
-
-
+    <section id="playboard">
+        <div class ="buttonbox" id="buttonbox">
+            <button class="btn" id="btn1">rock</button>
+            <button class="btn" id="btn2">paper</button>
+            <button class="btn" id="btn3">scissors</button>
+        </div>
+        <div>
+            <ul class="scoreboard" id="scoreboard"></ul>
+        </div>
+    </section>
 </body>
 </html>

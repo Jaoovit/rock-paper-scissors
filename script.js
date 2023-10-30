@@ -49,11 +49,9 @@ function playRound(userChoice) {
             result.put = 'Tie, Play Again'
         }
         
-        document.querySelector('#scoreboard').innerHTML = result.put;
+        document.querySelector('#scoreboard').innerHTML = result.put
     }
-    
-
-    
+        
 
     
    /*function score() {

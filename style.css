@@ -1,0 +1,32 @@
+body {
+    background-color: #4F4F4F
+}
+
+.buttonbox {
+    background-color: #696969;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 8px;
+    gap: 50px;
+}
+
+.btn {
+    padding: 25px;
+    padding-bottom: 40px;
+    height: 50px;
+    width: 200px;
+    border-radius: 100px;
+   
+}
+
+.scoreboard {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+
+}
