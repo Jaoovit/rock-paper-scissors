@@ -8,7 +8,7 @@ bnt3.addEventListener('click', getUserChoice)
 
 function getUserChoice(e) {
 
-    playRound(e.target.innerText) 
+    playRound(e.target.value) 
     
 }
 
