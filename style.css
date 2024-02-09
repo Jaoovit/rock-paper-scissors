@@ -62,7 +62,18 @@ a {
    
 }
 
+h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 .score {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.pointscore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

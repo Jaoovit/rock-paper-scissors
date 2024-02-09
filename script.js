@@ -24,6 +24,10 @@ function getComputerChoice() {
 
 let result = [];
 
+let playerScore = 0
+let computerScore = 0
+
+
 function playRound(userChoice) {
 
     const playerSelection = userChoice;
@@ -31,41 +35,37 @@ function playRound(userChoice) {
 
        if (playerSelection == 'rock' && computerSelection == 'scissors') {
             result.put = 'You win! Rock beats Scissors'
+            playerScore += 1
         }
         else if (playerSelection == 'scissors' && computerSelection == 'paper') {
             result.put = 'You win! Scissors beats Paper'
+            playerScore += 1
         }
         else if(playerSelection == 'paper' && computerSelection == 'rock') {
             result.put = 'You win! Paper beats Rock'
+            playerScore += 1
         }
         else if(playerSelection == 'scissors' && computerSelection == 'rock') {
             result.put = 'You lose! Rock beats Scissors'
+            computerScore += 1
         }
         else if(playerSelection == 'paper' && computerSelection == 'scissors') {
             result.put = 'You lose! Scissors beats Paper'
+            computerScore += 1
         }
         else if (playerSelection == 'rock' && computerSelection == 'paper') {
             result.put = 'You lose! Paper beats Rock'
+            computerScore += 1
         }
         else if (playerSelection == computerSelection) {
             result.put = 'Tie, Play Again'
         }
         
         document.querySelector('#scoreboard').innerHTML = result.put
-        console.log(playerSelection)
-        console.log(computerSelection)
+        console.log(playerScore)
+        console.log(computerScore)
+
+        player.innerText = playerScore
+        computer.innerText = computerScore
+
     }
-        
-
-    
-   /*function score() {
-
-        
-        for(let i = 1; i <= 5; i++) {
-        }
-
-        
-    }
-*/
-
-    
