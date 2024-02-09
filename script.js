@@ -61,11 +61,28 @@ function playRound(userChoice) {
             result.put = 'Tie, Play Again'
         }
         
-        document.querySelector('#scoreboard').innerHTML = result.put
-        console.log(playerScore)
-        console.log(computerScore)
 
         player.innerText = playerScore
         computer.innerText = computerScore
+        scoreboard.style.color = 'rgb(49, 49, 49)'
 
+        if(playerScore == 5) {
+            result.put = 'Congratulations, you win the game'
+            scoreboard.style.color = 'green'
+            playerScore = 0
+            computerScore = 0
+        }if(computerScore == 5) {
+            result.put = 'Sorry, you lost the game'
+            scoreboard.style.color = 'brown'
+            computerScore = 0
+            playerScore = 0
+        }
+
+        
+        document.querySelector('#scoreboard').innerHTML = result.put
+
+       
+        
     }
+    
+   
